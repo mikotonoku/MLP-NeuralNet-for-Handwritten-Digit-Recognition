@@ -1,4 +1,4 @@
-# MLP Neural Network for Handwritten Digit Recognition :pushpin:
+# MLP Neural Net. for Handwritten Digit Recognition :pushpin:
 This project implements a **Multilayer Perceptron (MLP)** neural network designed to recognize handwritten digits using a dataset of image samples. 
 
 :dart: The goal was to **build and train** a model that achieves high classification accuracy, assess its performance using confusion matrices, and test the predictions on a representative sample of digits **from 0 to 9**.

@@ -23,7 +23,7 @@ This project implements a **Multilayer Perceptron (MLP)** neural network designe
 
 ### :repeat: Description of Input and Output Data
 #### *INPUT DATA*
-*The data is loaded from the variable 'XDataall', stored in the file 'datapiscisla_all.mat'.*
+*The data is loaded from the variable `XDataall`, stored in the file `datapiscisla_all.mat`.*
 * The dataset contains **handwritten digits** represented as **28×28 grayscale images**, resulting in **784 pixels per character**.
 * **Pixel values range from 0 to 255**, where higher values correspond to **darker pixels**.
 >```matlab
@@ -46,7 +46,7 @@ This project implements a **Multilayer Perceptron (MLP)** neural network designe
 This encoding allows the neural network to perform **multi-class classification** effectively using a softmax output layer.
 
 #### *DATA SPLITTING INTO TRAINING AND TESTING*
-*The dataset was **randomly divided** into training and testing subsets using MATLAB's built-in 'dividerand' function:*
+*The dataset was **randomly divided** into training and testing subsets using MATLAB's built-in `dividerand` function:*
 >```matlab
 >% Set data division using 'dividerand'
 >net.divideFcn = 'dividerand';                                               % Randomly split the dataset
@@ -100,8 +100,8 @@ net.trainParam.max_fail = 12;                                               % Ma
 [net, tr] = train(net, data.XDataall, data.YDataall);
 ```
 
-* 'data.XDataall': Input data representing **handwritten digits**, normalized to the range ⟨0, 1⟩. Each digit is divided into a 28×28 grid, totaling 784 pixels per character.
-* 'data.YDataall': Output data containing **target values in one-hot encoding** format, where each digit (0–9) is represented as a binary vector of length 10.
+* `data.XDataall`: Input data representing **handwritten digits**, normalized to the range ⟨0, 1⟩. Each digit is divided into a 28×28 grid, totaling 784 pixels per character.
+* `data.YDataall`: Output data containing **target values in one-hot encoding** format, where each digit (0–9) is represented as a binary vector of length 10.
 
 >:arrow_left: [**Back to *CONTENT***](#content)
 
@@ -134,7 +134,7 @@ net.trainParam.max_fail = 12;                                               % Ma
 The training process uses the **Mean Squared Error (MSE)** as the loss function. This function evaluates how well the neural network performs by calculating the average squared difference between predicted and actual outputs.
 
 In the code:
-* Training is terminated when the **MSE reaches the predefined goal value of** '0.00001' ('net.trainParam.goal = 0.00001').
+* Training is terminated when the **MSE reaches the predefined goal value of** `0.00001` (`net.trainParam.goal = 0.00001`).
 
 >:arrow_left: [**Back to *CONTENT***](#content)
 

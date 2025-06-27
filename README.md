@@ -41,7 +41,7 @@ This project implements a **Multilayer Perceptron (MLP)** neural network designe
 *YDataall:*
 * Each character (digit) is assigned to one of **10 categories** representing digits **0 through 9**.
 * The **target values** are encoded in **one-hot format**, where each digit is represented as a **binary vector** of length 10.
-   * For example, the digit **3** is represented as: '[0 0 0 1 0 0 0 0 0 0]'.
+   * For example, the digit **3** is represented as: `[0 0 0 1 0 0 0 0 0 0]`.
      
 This encoding allows the neural network to perform **multi-class classification** effectively using a softmax output layer.
 
